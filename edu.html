@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Education</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:#F5F5DC;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 { margin: 0; }
+    .timeline {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .timeline-item {
+      background: white;
+      border-left: 5px solid #2e7d32;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .timeline-item img {
+      width: 70px;
+      height: auto;
+      margin-right: 15px;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    .timeline-item h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #1b5e20;
+    }
+    .timeline-item span {
+      display: block;
+      font-size: 14px;
+      color: #388e3c;
+      margin-top: 5px;
+    }
+
+    .active {
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+    
+    .stop-btn {
+      display:block;
+      margin:60px auto;
+      background:#2e7d32;
+      color:#fff;
+      border:none;
+      padding:10px 20px;
+      border-radius:5px;
+      cursor:pointer;
+      font-size:16px;
+    }
+    .stop-btn:hover {
+      background:#00ff99;
+      color:#2e4d2e;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EDUCATION JOURNEY</h1>
+  </header>
+
+  <div class="timeline">
+    <div class="timeline-item" onclick="playSong('uitm', this)">
+      <img src="UiTM.jpg" alt="Logo UiTM Kedah">
+      <div>
+        <h2>UiTM CAWANGAN KEDAH</h2>
+        <span>2023 - Present</span>
+      </div>
+    </div>
+<div class="timeline-item" onclick="playSong('SMK TUNKU PUTRA', this)">
+      <img src="smk tunku putra.jpg" alt="Logo SMK Tunku Putra">
+      <div>
+        <h2>SMK TUNKU PUTRA (STPM)</h2>
+        <span>2021 - 2023</span>
+      </div>
+    </div>
+    <div class="timeline-item" onclick="playSong('SMK TUNKU PUTRA', this)">
+      <img src="smk tunku putra.jpg" alt="Logo SMK Tunku Putra">
+      <div>
+        <h2>SMK TUNKU PUTRA (SPM)</h2>
+        <span>2018 - 2020</span>
+      </div>
+    </div>
+    <div class="timeline-item" onclick="playSong('maktab', this)">
+      <img src="maktab mahmud.png" alt="Logo Maktab Mahmud Langkawi">
+      <div>
+        <h2>MAKTAB MAHMUD LANGKAWI</h2>
+        <span>2016 - 2017</span>
+      </div>
+    </div>
+   <div class="timeline-item" onclick="playSong('sk ulu melaka', this)">
+      <img src="sk ulu melaka.png" alt="Logo SK Ulu Melaka">
+      <div>
+        <h2>SEKOLAH KEBANGSAAN ULU MELAKA</h2>
+        <span>2010 - 2015</span>
+
+      </div>
+    </div>
+  </div>
+
+  <button class="stop-btn" onclick="stopMusic()">STOP MUSIC</button>
+
+  <audio id="uitm" src="uitm.mp3"></audio>
+  <audio id="SMK TUNKU PUTRA" src="SMK TUNKU PUTRA.mp3"></audio>
+  <audio id="SMK TUNKU PUTRA" src="SMK TUNKU PUTRA.mp3"></audio>
+  <audio id="maktab" src="maktab.mp3"></audio>
+  <audio id="sk ulu melaka" src="sk ulu melaka.mp3"></audio>
+  
+
+  <footer style="background-color:#8FBC8F; color:#000000; display:flex; justify-content:center; align-items:center; height:40px; font-family:Arial, sans-serif; position:fixed; bottom:0; width:100%;">
+    <p style="margin:0;">© 2025 Ummu. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function playSong(id, element) {
+     
+      document.querySelectorAll('audio').forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+      
+      document.querySelectorAll('.timeline-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      element.classList.add('active');
+      
+      document.getElementById(id).play();
+    }
+
+    function stopMusic() {
+      
+      document.querySelectorAll('audio').forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+      
+      document.querySelectorAll('.timeline-item').forEach(item => {
+        item.classList.remove('active');
+      });
+    }
+  </script>
+
+</body>
+</html>
+

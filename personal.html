@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Information</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    body {
+        font-family: Arial;
+        background-color:#F5F5DC;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .container {
+        width: 75%;
+        margin: auto;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 18px rgba(0,0,0,0.12);
+        border-left: 6px solid #3ba762; 
+    }
+
+    h2 {
+        text-align: center;
+        color: #2e7d4f;
+        margin-bottom: 25px;
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 18px;
+    }
+
+    td {
+        padding: 12px;
+        vertical-align: top;
+    }
+
+    .label {
+        color: #2e7d4f;
+        font-weight: bold;
+        width: 200px;
+    }
+
+    .profile-pic {
+        width: 230px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 3px solid #3ba762;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .info-box {
+        padding: 8px 12px;
+        background: #f4fff6;
+        border-left: 4px solid #3ba762;
+        border-radius: 6px;
+    }
+
+    .order-form {
+        margin-top:25px;
+        background:#f9fff9;
+        padding:20px;
+        border-radius:10px;
+        border:1px solid #3ba762;
+    }
+    .order-form h3 {
+        color:#2e7d4f;
+        margin-bottom:15px;
+        text-align:center;
+    }
+    .order-form label {
+        display:block;
+        margin:8px 0 4px;
+        font-weight:bold;
+        color:#2e7d4f;
+    }
+    .order-form input, .order-form textarea {
+        width:100%;
+        padding:8px;
+        border:1px solid #ccc;
+        border-radius:5px;
+        margin-bottom:10px;
+        font-family:Arial, sans-serif;
+    }
+    .order-form button {
+        background-color:#2e7d4f;
+        color:#fff;
+        border:none;
+        padding:10px 20px;
+        border-radius:5px;
+        cursor:pointer;
+        font-size:16px;
+    }
+    .order-form button:hover {
+        background-color:#00ff99;
+        color:#2e4d2e;
+    }
+
+    footer {
+        background-color:#8FBC8F;
+        color:#000000;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:40px;
+        font-family:Arial, sans-serif;
+        position:fixed;
+        bottom:0;
+        width:100%;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>PERSONAL BACKGROUND</h2>
+    <table>
+        <tr>
+            <td rowspan="10" width="250">
+                <img src="my picture.jpg" class="profile-pic">
+            </td>
+            <td class="label"><i class="fa-solid fa-user"></i> Name</td>
+            <td class="info-box">UMMU HANI BINTI HAMZAH</td>
+        </tr>
+        <tr>
+            <td class="label"><i class="fa-solid fa-hourglass-half"></i> Age</td>
+            <td class="info-box">22 YEARS OLD</td>
+        </tr>
+        <tr>
+            <td class="label"><i class="fa-solid fa-calendar"></i> Birth Date</td>
+            <td class="info-box">16 NOVEMBER 2003</td>
+        </tr>
+        <tr>
+            <td class="label"><i class="fa-solid fa-location-dot"></i> Birth Place</td>
+            <td class="info-box">LANGKAWI, KEDAH</td>
+        </tr>
+        <tr>
+            <td class="label"><i class="fa-solid fa-house"></i> Home Address</td>
+            <td class="info-box">NO.28 KAMPUNG YOOI, MUKIM BOHOR 07000 LANGKAWI, KEDAH</td>
+        </tr>
+        <tr>
+            <td class="label"><i class="fa-solid fa-mosque"></i> Religion</td>
+            <td class="info-box">ISLAM</td>
+        </tr>
+        <tr>
+            <td class="label"><i class="fa-solid fa-venus"></i> Gender</td>
+            <td class="info-box">FEMALE</td>
+        </tr>
+        <tr>
+            <td class="label"><i class="fa-solid fa-phone"></i> Phone Number</td>
+            <td class="info-box">018-3284705</td>
+        </tr>
+        <tr>
+            <td class="label"><i class="fa-solid fa-envelope"></i> Email</td>
+            <td class="info-box">ummuhanihamzah@gmail.com</td>
+        </tr>
+    </table>
+
+    <div class="order-form">
+        <h3>CONTACT ME</h3>
+        <form action="mailto:ummuhanihamzah@gmail.com" method="post" enctype="text/plain">
+            <label for="name">YOUR NAME</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">YOUR EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+
+            <button type="submit">Submit</button>
+<button type="reset">reset</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+  <p style="margin:0;">© 2025 Ummu. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+

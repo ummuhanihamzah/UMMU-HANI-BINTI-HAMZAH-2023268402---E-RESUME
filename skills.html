@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:#F5F5DC;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 { margin: 0; }
+    .skills {
+      max-width: 900px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .skill-card {
+      background: white;
+      border: 2px solid #2e7d32;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .skill-card:hover { transform: scale(1.05); }
+    .skill-card i {
+      font-size: 30px;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+    .skill-card h3 {
+      margin: 0;
+      font-size: 16px;
+      color: #1b5e20;
+    }
+    .skill-card a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #2e7d32;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .skill-card a:hover {
+      color: #00ff99;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SKILLS</h1>
+  </header>
+
+  <div class="skills">
+    <div class="skill-card">
+      <i class="fas fa-tasks"></i>
+      <h3>Ability to Perform Multiple Tasks</h3>
+      
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-handshake"></i>
+      <h3>Public Relations</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-users"></i>
+      <h3>Teamwork</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-clock"></i>
+      <h3>Good in Time Management</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-comments"></i>
+      <h3>Effective Communication</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-file-word"></i>
+      <h3>Microsoft Word, Excel & PowerPoint</h3>
+      <a href="https://www.microsoft.com/microsoft-365" target="_blank">Learn more about Microsoft Office</a>
+
+    </div>
+  </div>
+
+<div class="skills">
+
+  <div class="skill-card">
+    <i class="fas fa-file-pdf"></i>
+    <h3>My Resume</h3>
+
+    <a href="resume.pdf" target="_blank">
+      <button style="background:#388e3c; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; margin:5px;">
+        View Resume Online
+      </button>
+    </a>
+  </div>
+</div>
+
+
+  <footer style="background-color:#8FBC8F; color:#000000; display:flex; justify-content:center; align-items:center; height:40px; font-family:Arial, sans-serif; position:fixed; bottom:0; width:100%;">
+    <p style="margin:0;">© 2025 Ummu. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
